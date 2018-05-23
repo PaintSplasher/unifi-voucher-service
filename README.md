@@ -1,4 +1,4 @@
-# UniFi Controller Voucher System via Touchscreen and Brother printer
+# UniFi Voucher System - Touchscreen with Brother printer
 I did a complete W-LAN installation on a campsite. But the Hotspot Manager that comes with the **UniFi Controller** was not very useful and a bit laborious to work with. I wanted a very simple all in one solution like, "Press one button and nothing else" to get a voucher printed and automatically insert the information to the UniFi Controller, that guests are able to join the network. I made a little video to introduce what this project does.
 
 Youtube Video: https://www.youtube.com/watch?v=23y2rxoWPfo
