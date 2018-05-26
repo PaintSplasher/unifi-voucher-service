@@ -1,3 +1,5 @@
+# Work in progress - Final files and "How to" are coming very soon
+
 # UniFi Voucher System - Touchscreen with Brother printer
 I did a complete W-LAN installation on a campsite. But the Hotspot Manager that comes with the **UniFi Controller** was not very useful and a bit laborious to work with. I wanted a very simple all in one solution like, "Press one button and nothing else" to get a voucher printed and automatically insert the information to the UniFi Controller, that guests are able to join the network. I made a little video to introduce what this project does.
 
@@ -8,6 +10,8 @@ Youtube Video: https://www.youtube.com/watch?v=23y2rxoWPfo
 - Minimal image based on Debian Stretch
 - Version: April 2018
 - Release date: 2018-04-18"
+
+Download image: https://downloads.raspberrypi.org/raspbian_lite_latest
 
 ## Based on the following hardware
 - Raspberry Pi 3 B+ (B Plus) with 3A Power Supply with Heatsinks
