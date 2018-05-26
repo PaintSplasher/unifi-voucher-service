@@ -122,9 +122,9 @@ require_once ('uvs_config.php');
           var val1 = $('#note option:selected').val(); 
           var val2 = $('#uploadlimit option:selected').val(); 
           var val3 = $('#downloadlimit option:selected').val(); 
-          var val4 = $('#bytequota option:selected').val(); 
+          var val6 = $('#bytequota option:selected').val(); 
           var val5 = $('#expiration option:selected').val(); 
-          var val6 = $('#quota option:selected').val(); 
+          var val4 = $('#quota option:selected').val(); 
           $.ajax({url:'codes/custom-voucher.php?note='+val1+'&uploadlimit='+val2+'&downloadlimit='+val3+'&bytequota='+val4+'&expiration='+val5+'&quota='+val6 ,type:'GET' ,success:function(data){ $('.print1dayfree').html(data);}});
         }      
         $(document).ready(function() {
