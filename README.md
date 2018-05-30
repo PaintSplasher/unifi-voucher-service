@@ -7,7 +7,7 @@ Youtube Video: https://www.youtube.com/watch?v=23y2rxoWPfo
 - Based on the "RASPBIAN STRETCH LITE"
 - Minimal image based on Debian Stretch
 - Version: April 2018
-- Release date: 2018-04-18"
+- Release date: 2018-04-18
 
 Download image: https://downloads.raspberrypi.org/raspbian_lite_latest
 
