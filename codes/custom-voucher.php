@@ -15,6 +15,10 @@ $uvs_key_up         =   $_GET["uploadlimit"];
 $uvs_key_down       =   $_GET["downloadlimit"];
 $uvs_key_limit      =   $_GET["quota"];
 
+if ($_GET["quota"]=="0") $uvs_key_limit=null;
+if ($_GET["downloadlimit"]=="0") $uvs_key_down=null;
+if ($_GET["uploadlimit"]=="0") $uvs_key_up=null;
+
 // Include the Unifi Voucher Service config file
 require_once ('../uvs_config.php');
 
