@@ -36,11 +36,6 @@ require_once ('uvs_config.php');
                         <select class="form-control" name="quota" id="quota">
                            <option value="1">One time (1 usage)</option>
                            <option value="2">Multi use (2 usages)</option>
-                           <option value="3">Multi use (3 usages)</option>
-                           <option value="4">Multi use (4 usages)</option>
-                           <option value="5">Multi use (5 usages)</option>
-                           <option value="6">Multi use (6 usages)</option>
-                           <option value="7">Multi use (7 usages)</option>
                         </select>
                      </div>
                      <div class="col-xs-4">
