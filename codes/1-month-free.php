@@ -29,7 +29,7 @@ function create_printimage($t1, $t2, $t3, $t4, $t5, $t6) {
    $background_color = imagecolorallocate($im, 255, 255, 255);
    $text_color = imagecolorallocate($im, 0, 0, 0);
 
-   $font = $uvs_docroot . "/var/www/html/". $uvs_folder ."/codes/montserrat-regular.otf";
+   $font = "/var/www/html/". $uvs_folder ."/codes/montserrat-regular.otf";
 
    $color = imagecolorallocate($im, 0, 0, 0);
 
