@@ -53,7 +53,7 @@ require_once ('uvs_config.php');
                      <div class="col-xs-4">
                         <label>Byte Quota (MB)</label>
                         <select class="form-control" name="bytequota" id="bytequota">
-                           <option value="null">unlimited</option>
+                           <option value="0">unlimited</option>
                            <option value="500">500 MB</option>
                            <option value="1000">1000 MB</option>
                            <option value="1500">1500 MB</option>
@@ -68,7 +68,7 @@ require_once ('uvs_config.php');
                      <div class="col-xs-6">
                         <label>Bandwidth Limit (Download in Kbps)</label>
                         <select class="form-control" name="downloadlimit" id="downloadlimit">
-                           <option value="null">unlimited</option>
+                           <option value="0">unlimited</option>
                            <option value="900">900 Kbps</option>
                            <option value="1800">1800 Kbps</option>
                            <option value="3600">3600 Kbps</option>
@@ -80,7 +80,7 @@ require_once ('uvs_config.php');
                      <div class="col-xs-6">
                         <label>Bandwidth Limit (Upload in Kbps)</label>
                         <select class="form-control" name="uploadlimit" id="uploadlimit">
-                           <option value="null">unlimited</option>
+                           <option value="0">unlimited</option>
                            <option value="450">450 Kbps</option>
                            <option value="900">900 Kbps</option>
                            <option value="1800">1800 Kbps</option>
