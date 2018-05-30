@@ -31,6 +31,8 @@ echo "</button>";
 
 // Fonts convert function for the printing voucher
 function create_printimage($t1, $t2, $t3, $t4, $t5, $t6) {
+   
+   include  ('../uvs_config.php');
 
    $im=imagecreate(696,271);
    $background_color = imagecolorallocate($im, 255, 255, 255);
