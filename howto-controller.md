@@ -1,7 +1,7 @@
-# Unifi Controller on Raspberry Pi
+# Unifi Controller on a Raspberry Pi
 I get a lot of questions how people have to install the Unifi Controller software on a Raspberry Pi. This is not a big deal and can be easily done by a few steps. And please remember, this is how I do it, there are some other possibilites.
 
-## This is all based on the "RASPBIAN STRETCH LITE" updated and fully setted image
+## All based on the "RASPBIAN STRETCH LITE" updated and fully setted image
 
 #### 1. We need to add the UniFi source to our list
 ```
