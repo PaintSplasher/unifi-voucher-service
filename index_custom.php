@@ -29,9 +29,9 @@ require_once ('uvs_config.php');
             <span class="shutdown_btn"><a href="shutdown.php"><img src="assets/img/shutdown.png" /></a></span>
             <p><a href="index.php"><img src="assets/img/logo.png" /></a></p>
             <h4><?php echo $uvs_subtitle ?></h4>
-            <br/><br/>
+            <br/>
             <form id="buttons">
-               <div class="col-lg-8 col-md-4 col-sm-4 gallery1st print1weekfree">
+               <div class="col-lg-8 col-md-8 col-sm-8 gallery1st print1weekfree">
                   <div class="row">
                      <div class="col-xs-4">
                         <label>Quota</label>
@@ -41,7 +41,7 @@ require_once ('uvs_config.php');
                         </select>
                      </div>
                      <div class="col-xs-4">
-                        <label>Expiration Time (Hours)</label>
+                        <label>Expiration</label>
                         <select class="form-control" name="expiration" id="expiration">
                            <option value="60">1 Hour</option>
                            <option value="360">6 Hours</option>
@@ -53,7 +53,7 @@ require_once ('uvs_config.php');
                         </select>
                      </div>
                      <div class="col-xs-4">
-                        <label>Byte Quota (MB)</label>
+                        <label>Byte Quota</label>
                         <select class="form-control" name="bytequota" id="bytequota">
                            <option value="0">unlimited</option>
                            <option value="500">500 MB</option>
@@ -68,7 +68,7 @@ require_once ('uvs_config.php');
                   <br/>
                   <div class="row">
                      <div class="col-xs-6">
-                        <label>Bandwidth Limit (Download in Kbps)</label>
+                        <label>Download Bandwidth</label>
                         <select class="form-control" name="downloadlimit" id="downloadlimit">
                            <option value="0">unlimited</option>
                            <option value="900">900 Kbps</option>
@@ -80,7 +80,7 @@ require_once ('uvs_config.php');
                         </select>
                      </div>
                      <div class="col-xs-6">
-                        <label>Bandwidth Limit (Upload in Kbps)</label>
+                        <label>Upload Bandwidth</label>
                         <select class="form-control" name="uploadlimit" id="uploadlimit">
                            <option value="0">unlimited</option>
                            <option value="450">450 Kbps</option>
