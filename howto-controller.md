@@ -30,7 +30,7 @@ sudo apt-get install oracle-java8-jdk
 ```
 echo 'JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt' | sudo tee /etc/default/unifi > /dev/null
 ```
-#### 7. Get rid of the old mongodb and stop it
+#### 7. Get rid of the old mongodb and stopped it
 ```
 sudo systemctl disable mongodb
 ```
