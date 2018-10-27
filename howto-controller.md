@@ -41,4 +41,4 @@ sudo systemctl stop mongodb
 ```
 sudo reboot
 ```
-This reboot can take two or three minutes until the controller is fully loaded and reachable. After a cup of coffee you can point your browser to ```https://localhost:8443``` and can start with your controller setup.
+This reboot can take two or three minutes until the controller is fully loaded and reachable. After a cup of coffee you can point your browser to ```https://localhost:8443``` and start with your controller setup.
