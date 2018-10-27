@@ -6,17 +6,22 @@ Youtube Video: https://www.youtube.com/watch?v=23y2rxoWPfo
 ## Based on the Raspbian Stretch Lite image
 - Based on the "RASPBIAN STRETCH LITE"
 - Minimal image based on Debian Stretch
-- Version: April 2018
-- Release date: 2018-04-18
+- Version: October 2018
+- Release date: 2018-10-09
 
 Download image: https://downloads.raspberrypi.org/raspbian_lite_latest
+
+## Based on the following driver/releases
+- Brother_ql version: 0.9.3
+- UniFi Controller version: 5.9.29
+- UniFi API-client version: 1.1.36
 
 ## Based on the following hardware
 - Raspberry Pi 3 B+ (B Plus) with 3A Power Supply with Heatsinks
 - Raspberry Pi Supply Switch On/Off 
 - Raspberry Pi 7" Touchscreen Display and Case (Official)
 - Brother QL-700 High-speed Professional Label Printer
-- Brother DK-11209 Adress Label Small 29x62mm
+- Brother DK-11209 Adress Label Small 62x29mm
 - Two simple push buttons
 
 ## 1. We will start with a fresh image on our Raspbian Pi
@@ -57,7 +62,7 @@ sudo reboot
 ```
 sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
-Remember to enable the VNC Server over ```sudo raspi-config``` and reboot.
+Remember to enable the VNC Server over ```sudo raspi-config``` and reboot. (5 Interfacing Options - P3 VNC - Yes)
 
 ## 3. We also need a LAMP Server - Apache, PHP7 and MariaDB
 
@@ -111,9 +116,9 @@ sudo apt-get install python3-setuptools python3-pip libopenjp2-7-dev libtiff5 gi
 ```
 #### Get the nice printer package from pklaus
 ```
-sudo pip3 install brother_ql
+sudo pip3 install --upgrade brother_ql
 ```
-The brother_ql Python package provides the foundations for this project and enables driving QL series label printers without the usually required printer drivers. So this is perfect!
+The brother_ql Python package provides the foundations for this project and enables driving QL series label printers without the usually required printer drivers. The upgrade flag makes sure, you get the latest version. So this is perfect!
 #### Our "Pi" account need access to the "lp" group
 ```
 sudo usermod -G lp -a pi
@@ -122,17 +127,22 @@ sudo usermod -G lp -a pi
 ```
 sudo reboot
 ```
-#### Finally we are able to see some success put my printfile.bin to your Desktop
+#### Finally we are able to see some success, put my test label to your Desktop
 ```
 cd /home/pi/Desktop
 ```
 ```
-sudo wget https://github.com/PaintSplasher/unifi-voucher-service/blob/master/codeimage/printfile.bin
+sudo wget https://github.com/PaintSplasher/unifi-voucher-service/blob/master/codeimage/test-print.png
 ```
+To identify your printer at your usb-port type
 ```
-sudo brother_ql_print /home/pi/Desktop/printfile.bin /dev/usb/lp0
+lsusb
 ```
-Your printer should now have a label printed, if not try ```/dev/usb/lp1``` at the end. It depends on how many usb devices you have connected. If you just have your printer connected the device should "lp0".
+You should see something like ```Bus 001 Device 004: ID 04f9:2042 Brother Industries, Ltd```, write down your ID.
+```
+sudo brother_ql -p usb://04f9:2042 -m QL-700 print -l 62x29 test-print.png
+```
+Your printer should now have a happy notice printed for you. Your printer ID depends on how many usb devices you have connected or which port you use, change the ID if necessary.
 
 ## 5.1 Optional: If you want a web service to print labels
 
@@ -155,9 +165,9 @@ sudo cp config.example.json config.json
 ```
 sudo nano config.json
 ```
-As always it is up to you, if you want to change the port to :80 or :1337 or whatever. I go with standard :8013. Also if you don't have the QL-700 you should also change the model.
+As always it is up to you, if you want to change the port to :80 or :1337 or whatever. I go with standard :8013. Also if you don't have the QL-700 you should also change the model and remember your printer ID.
 ```php
-"PORT": 8013 , "HOST": "localhost" , "MODEL": "QL-700" , "PRINTER": "file:///dev/usb/lp0"
+"PORT": 8013 , "HOST": "localhost" , "MODEL": "QL-700" , "PRINTER": "usb://04f9:2042"
 ```
 #### We can start our service now
 ```
@@ -195,7 +205,7 @@ http://localhost/unifi-voucher-service/index.php
 ```
 http://localhost/unifi-voucher-service/index_custom.php
 ```
-To change your personal voucher settings I did a uvs_config.php file and comment everything. 
+To change your personal voucher settings I did a uvs_config.php file and described everything. 
 ```
 sudo nano /var/www/html/unifi-voucher-service/uvs_config.php
 ```
@@ -244,12 +254,13 @@ After we push the "on" button on our Raspberry Pi we want to land directly on ou
 ```
 sudo apt-get install unclutter
 ```
-#### Edit the autostart so we dont have any work to do after push the button
+#### Edit the autostart so we do not have any work to do after we pushed the button
 ```
 sudo nano /home/pi/.config/lxsession/LXDE/autostart
 ```
 And add
 ```
+@xset -dpms
 @unclutter
 @chromium-browser --kiosk http://localhost/unifi-voucher-service
 ```
@@ -257,11 +268,11 @@ And add
 ```
 sudo raspi-config
 ```
-Go to Boot Option, Desktop / CLI and B4: ... automatically logged in as "pi" user. Finish and reboot.
+Go to 3 Boot Option - B1 Desktop / CLI - B4 Desktop Autologin Desktop GUI, automatically logged in as "pi" user. Finish and reboot.
 
 ## Congratulation, you are done!
 
-## 10. Optional: If you also have the Pi-Supply-Switch we need a special python script
+## 10. Optional: If you also have the Pi-Supply-Switch we need a special script
 
 #### Install and setup the softshut.py - afterwards the Raspberry Pi will shutdown
 ```
@@ -275,3 +286,4 @@ Please use the github [issue](https://github.com/PaintSplasher/unifi_touch_print
 A big thank you and credits goes to:
 - Art-of-WiFi: https://github.com/Art-of-WiFi/UniFi-API-client
 - pklaus: https://github.com/pklaus/brother_ql_web
+- aojeda: @Ubiquiti Community
