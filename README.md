@@ -137,6 +137,7 @@ sudo reboot
 ```
 cd /home/pi/Desktop
 ```
+If you get ```No such file or directory``` than you have to login once into your GUI to create the folders.
 ```
 sudo wget https://raw.githubusercontent.com/PaintSplasher/unifi-voucher-service/master/codeimage/test-print.png
 ```
