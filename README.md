@@ -132,7 +132,7 @@ sudo reboot
 cd /home/pi/Desktop
 ```
 ```
-sudo wget https://github.com/PaintSplasher/unifi-voucher-service/blob/master/codeimage/test-print.png
+sudo wget https://raw.githubusercontent.com/PaintSplasher/unifi-voucher-service/master/codeimage/test-print.png
 ```
 To identify your printer at your usb-port type
 ```
