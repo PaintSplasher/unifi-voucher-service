@@ -110,9 +110,9 @@ sudo apt-get install python-sense-emu python3-sense-emu
 
 ## 4.1 Optional: UniFi Controller Software on the raspberry
 
-#### If you want to run the UniFi Controller on the same raspberry you can follow this short how-to.
+#### If you want to run the UniFi Controller on the same raspberry you can follow my short guide.
 
-https://github.com/PaintSplasher/unifi-voucher-service/blob/master/howto-controller.md
+How-To: https://github.com/PaintSplasher/unifi-voucher-service/blob/master/howto-controller.md
 
 ## 5. Time for the printer - make sure your "editor lite" mode is disabled (led off)
 
