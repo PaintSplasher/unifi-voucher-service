@@ -1,6 +1,6 @@
 <?php
 /*
- * UniFi Voucher Service v1.0
+ * UniFi Voucher Service v2.0
  * Copyright 2018 Sass-Projects (https://www.sass-projects.info)
  * Licensed under GNU General Public License v3.0
  * (https://github.com/PaintSplasher/unifi-voucher-service/blob/master/README.md)
@@ -25,7 +25,8 @@ require_once ('uvs_config.php');
       <section id="works"></section>
       <div class="container">
          <div class="row centered mt mb">
-            <p><img src="assets/img/logo.png" /></p>
+            <span class="shutdown_btn"><a href="shutdown.php"><img src="assets/img/shutdown.png" /></a></span>
+            <p><a href="index_custom.php"><img src="assets/img/logo.png" /></a></p>
 						<h4><?php echo $uvs_subtitle ?></h4>
             <form id="buttons">
             <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1dayfree">

@@ -1,6 +1,6 @@
 <?php
 /*
- * UniFi Voucher Service v1.0
+ * UniFi Voucher Service v2.0
  * Copyright 2018 Sass-Projects (https://www.sass-projects.info)
  * Licensed under GNU General Public License v3.0
  * (https://github.com/PaintSplasher/unifi-voucher-service/blob/master/README.md)
@@ -20,12 +20,14 @@ require_once ('uvs_config.php');
       <link href="assets/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/css/style.min.css" rel="stylesheet">
       <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+      <link href="assets/css/keyboard.css" rel="stylesheet">
    </head>
    <body>
       <section id="works"></section>
       <div class="container">
          <div class="row centered mt mb">
-            <p><img src="assets/img/logo.png" /></p>
+            <span class="shutdown_btn"><a href="shutdown.php"><img src="assets/img/shutdown.png" /></a></span>
+            <p><a href="index.php"><img src="assets/img/logo.png" /></a></p>
             <h4><?php echo $uvs_subtitle ?></h4>
             <br/><br/>
             <form id="buttons">
@@ -93,11 +95,8 @@ require_once ('uvs_config.php');
                   <br/>
                   <div class="row">
                      <div class="col-xs-12">
-                        <label>Note</label>
-                        <select class="form-control" name="note" id="note">
-                           <option value="Free Voucher">Free Voucher</option>
-                           <option value="Fastpass Voucher">Fastpass Voucher</option>
-                        </select>
+                     <label>Note</label>
+                        <input type="text" class="form-control" placeholder="Type a note" name="note" id="note">
                      </div>
                   </div>
                </div>
@@ -112,9 +111,19 @@ require_once ('uvs_config.php');
       </div>
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery-ui.min.js"></script>
+      <script src="assets/js/jqkeyboard.js"></script>
+      <script src="assets/js/jqk.layout.en-bg.js"></script>
+      <div id="button-hint"></div>
+      <script>
+      $(function () {
+        "use strict";
+        jqKeyboard.init();
+        });
+      </script>
       <script>
         function senddata() {
-          var val1 = $('#note option:selected').val(); 
+          var val1 = $('#note').val(); 
           var val2 = $('#uploadlimit option:selected').val(); 
           var val3 = $('#downloadlimit option:selected').val(); 
           var val6 = $('#bytequota option:selected').val(); 

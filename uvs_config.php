@@ -1,6 +1,6 @@
 <?php
 /*
- * UniFi Voucher Service v1.0
+ * UniFi Voucher Service v2.0
  * Copyright 2018 Sass-Projects (https://www.sass-projects.info)
  * Licensed under GNU General Public License v3.0
  * (https://github.com/PaintSplasher/unifi-voucher-service/blob/master/README.md)
@@ -11,20 +11,25 @@ $uvs_title          =   'Unifi Voucher Service'; // The title of your voucher pa
 $uvs_subtitle       =   'Please choose a voucher to get access to our network!'; // Here you can write down your subtitle or some comment
 
 /* Translate if you want */
-$uvs_quota          =   'Quota:';
-$uvs_usages         =   'Usages';    
+$uvs_quota          =   ''; // Quota
+$uvs_usages         =   ''; // Usages
 $uvs_hours          =   'Hours';
-$uvs_expiration     =   'Valid for';
-$uvs_upload         =   'Upload Bandwidth';
-$uvs_download       =   'Download Bandwidth';
+$uvs_day            =   'Day';
+$uvs_days           =   'Days';
+$uvs_expiration     =   ''; // Valid for
+$uvs_upload         =   ''; // Upload Bandwidth
+$uvs_download       =   ''; // Download Bandwidth
 $uvs_uprate         =   'Kbps';
 $uvs_downrate       =   'Kbps';
+$uvs_wifissid       =   'SSID:';
 
 /* Optional changes */
 $uvs_folder         =   'unifi-voucher-service'; // If you want to rename your folder
 $uvs_printer        =   'QL-700'; // For more information about supported printers visit: https://pypi.org/project/brother_ql/
 $uvs_labelsize      =   '62x29'; // For more information about supported labels visit: https://pypi.org/project/brother_ql/
-$uvs_usbport        =   '0'; // If your printer is not the first on your usb, on a clean install you do not have to change it
+$uvs_usbid          =   '04f9:2042'; // Remember your printer ID. To identify your printer at your usb-port type lsusb, as mention in step 5.
+$uvs_vlan           =   '88'; // The VLAN ID of your guest network. (UniFi Controller - Settings - Wireless Networks)
+
 
 /* 1 day free */
 $uvs_1df_site_id    =   'default'; // The site where you want to create the voucher
