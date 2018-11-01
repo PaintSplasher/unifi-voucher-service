@@ -93,6 +93,10 @@ sudo apt-get install php7.0 libapache2-mod-php7.0
 ```
 sudo apt-get install php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache php7.0-pspell php7.0-recode php7.0-sqlite3 php7.0-tidy php7.0-xmlrpc php7.0-xsl
 ```
+#### Just to make sure ImageMagick is installed correct
+```
+sudo apt-get install imagemagick
+```
 #### Finally we need to restart apache
 ```
 sudo service apache2 restart
@@ -153,6 +157,10 @@ Your printer should now have a happy notice printed for you. Your printer ID dep
 
 ## 5.1 Optional: If you want a web service to print labels
 
+#### Just to make sure fontconfig is installed correct
+```
+sudo apt-get install fontconfig
+```
 ```
 cd /usr/src
 ```
