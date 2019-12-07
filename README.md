@@ -12,7 +12,7 @@ Youtube Video: https://www.youtube.com/watch?v=23y2rxoWPfo
 Download image: https://downloads.raspberrypi.org/raspbian_lite_latest
 
 ## Based on the following driver/releases
-- Brother_ql version: 0.9.3
+- Brother_ql version: 0.9.4
 - UniFi Controller version: 5.11.50
 - UniFi API-client version: 1.1.42
 
