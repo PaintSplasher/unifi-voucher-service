@@ -3,18 +3,18 @@ I did a complete W-LAN installation on a campsite. But the Hotspot Manager that 
 
 Youtube Video: https://www.youtube.com/watch?v=23y2rxoWPfo
 
-## Based on the Raspbian Stretch Lite image
-- Based on the "RASPBIAN STRETCH LITE"
-- Minimal image based on Debian Stretch
-- Version: October 2018
-- Release date: 2018-10-09
+## Based on the Raspbian Buster Lite image
+- Based on the "RASPBIAN BUSTER LITE"
+- Minimal image based on Debian Buster
+- Version: September 2019
+- Release date: 2019-09-26
 
 Download image: https://downloads.raspberrypi.org/raspbian_lite_latest
 
 ## Based on the following driver/releases
 - Brother_ql version: 0.9.3
-- UniFi Controller version: 5.9.29
-- UniFi API-client version: 1.1.36
+- UniFi Controller version: 5.11.50
+- UniFi API-client version: 1.1.42
 
 ## Based on the following hardware
 - Raspberry Pi 3 B+ (B Plus) with 3A Power Supply with Heatsinks
@@ -87,11 +87,11 @@ Secure installation:
 sudo apt-get install apache2
 ```
 ```
-sudo apt-get install php7.0 libapache2-mod-php7.0
+sudo apt-get install php7.3 libapache2-mod-php7.3
 ```
 #### I like to install some common apache modules for php/db support and keep it small and simple
 ```
-sudo apt-get install php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache php7.0-pspell php7.0-recode php7.0-sqlite3 php7.0-tidy php7.0-xmlrpc php7.0-xsl
+sudo apt-get install php7.3-mysql php7.3-curl php7.3-gd php7.3-intl php-pear php-imagick php7.3-imap php-memcache php7.3-pspell php7.3-recode php7.3-sqlite3 php7.3-tidy php7.3-xmlrpc php7.3-xsl
 ```
 #### Just to make sure ImageMagick is installed correct
 ```
