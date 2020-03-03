@@ -29,34 +29,34 @@ require_once ('uvs_config.php');
             <p><a href="index_custom.php"><img src="assets/img/logo.png" /></a></p>
 						<h4><?php echo $uvs_subtitle ?></h4>
             <form id="buttons">
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1dayfree">
-               <button onCLick="$.ajax({url:'codes/1-day-free.php',type:'GET',success:function(data){$('.print1dayfree').html(data);}});" type="submit" name="1dayfree" id="1dayfree">               
-               <div id="oben"><img src="assets/img/printing.png" id="1dayfreeimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-day-free.png" class="img-responsive" /></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1day1device">
+               <button onCLick="$.ajax({url:'codes/1-1.php',type:'GET',success:function(data){$('.print1day1device').html(data);}});" type="submit" name="1day1device" id="1day1device">               
+               <div id="oben"><img src="assets/img/printing.png" id="1day1deviceimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-1.png" class="img-responsive" /></div>
                </button>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1weekfree">
-               <button onCLick="$.ajax({url: 'codes/1-week-free.php', type: 'GET', success: function(data){$('.print1weekfree').html(data);}});" type="submit" name="1weekfree" id="1weekfree">
-               <div id="oben"><img src="assets/img/printing.png" id="1weekfreeimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-week-free.png" class="img-responsive" /></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1week1device">
+               <button onCLick="$.ajax({url: 'codes/7-1.php', type: 'GET', success: function(data){$('.print1week1device').html(data);}});" type="submit" name="1week1device" id="1week1device">
+               <div id="oben"><img src="assets/img/printing.png" id="1week1deviceimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/7-1.png" class="img-responsive" /></div>
                </button>			
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1monthfree">
-               <button onCLick="$.ajax({url: 'codes/1-month-free.php', type: 'GET', success: function(data){$('.print1monthfree').html(data);}});" type="submit" name="1monthfree" id="1monthfree">
-               <div id="oben"><img src="assets/img/printing.png" id="1monthfreeimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-month-free.png" class="img-responsive" /></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1month1device">
+               <button onCLick="$.ajax({url: 'codes/31-1.php', type: 'GET', success: function(data){$('.print1month1device').html(data);}});" type="submit" name="1month1device" id="1month1device">
+               <div id="oben"><img src="assets/img/printing.png" id="1month1deviceimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-month-free.png" class="img-responsive" /></div>
                </button>			
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery2nd print1daypay">
-               <button onCLick="$.ajax({url: 'codes/1-day-fastpass.php', type: 'GET', success: function(data){$('.print1daypay').html(data);}});" type="submit" name="1daypay" id="1daypay">
-               <div id="oben"><img src="assets/img/printing.png" id="1daypayimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-day-pay.png" class="img-responsive" /></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery2nd print1day2devices">
+               <button onCLick="$.ajax({url: 'codes/1-2.php', type: 'GET', success: function(data){$('.print1day2devices').html(data);}});" type="submit" name="1day2devices" id="1day2devices">
+               <div id="oben"><img src="assets/img/printing.png" id="1day2devicesimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-2.png" class="img-responsive" /></div>
                </button>			
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery2nd print1weekpay">
-               <button onCLick="$.ajax({url: 'codes/1-week-fastpass.php', type: 'GET', success: function(data){$('.print1weekpay').html(data);}});" type="submit" name="1weekpay" id="1weekpay">
-               <div id="oben"><img src="assets/img/printing.png" id="1weekpayimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-week-pay.png" class="img-responsive" /></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery2nd print1week2devices">
+               <button onCLick="$.ajax({url: 'codes/7-2.php', type: 'GET', success: function(data){$('.print1week2devices').html(data);}});" type="submit" name="1week2devices" id="1week2devices">
+               <div id="oben"><img src="assets/img/printing.png" id="1week2devicesimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/7-2.png" class="img-responsive" /></div>
                </button>			
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery2nd print1monthpay">
-               <button onCLick="$.ajax({url: 'codes/1-month-fastpass.php', type: 'GET', success: function(data){$('.print1monthpay').html(data);}});" type="submit" name="1monthpay" id="1monthpay">
-               <div id="oben"><img src="assets/img/printing.png" id="1monthpayimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-month-pay.png" class="img-responsive" /></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery2nd print1month2devices">
+               <button onCLick="$.ajax({url: 'codes/31-2.php', type: 'GET', success: function(data){$('.print1month2devices').html(data);}});" type="submit" name="1month2devices" id="1month2devices">
+               <div id="oben"><img src="assets/img/printing.png" id="1month2devicesimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/31-2.png" class="img-responsive" /></div>
                </button>			
 						</div>
             </form>
@@ -68,23 +68,23 @@ require_once ('uvs_config.php');
       $(document).ready(function() {
         $("#buttons").submit(function(e) {
           e.preventDefault();
-            $("#1dayfree").attr("disabled", true);
-            $("#1weekfree").attr("disabled", true);
-            $("#1monthfree").attr("disabled", true);
-            $("#1daypay").attr("disabled", true);
-            $("#1weekpay").attr("disabled", true);
-            $("#1monthpay").attr("disabled", true);
+            $("#1day1device").attr("disabled", true);
+            $("#1week1device").attr("disabled", true);
+            $("#1month1device").attr("disabled", true);
+            $("#1day2devices").attr("disabled", true);
+            $("#1week2devices").attr("disabled", true);
+            $("#1month2devices").attr("disabled", true);
             return true;
           });
       });
 
       $(document).ready(function() {
-        $('#1dayfreeimg').hide();$("#1dayfree").click(function(){$("#1dayfreeimg").show(); });
-        $('#1weekfreeimg').hide();$("#1weekfree").click(function(){$("#1weekfreeimg").show(); });
-        $('#1monthfreeimg').hide();$("#1monthfree").click(function(){$("#1monthfreeimg").show(); });
-        $('#1daypayimg').hide();$("#1daypay").click(function(){$("#1daypayimg").show(); });
-        $('#1weekpayimg').hide();$("#1weekpay").click(function(){$("#1weekpayimg").show(); });
-        $('#1monthpayimg').hide();$("#1monthpay").click(function(){$("#1monthpayimg").show(); }); 
+        $('#1day1deviceimg').hide();$("#1day1device").click(function(){$("#1day1deviceimg").show(); });
+        $('#1week1deviceimg').hide();$("#1week1device").click(function(){$("#1week1deviceimg").show(); });
+        $('#1month1deviceimg').hide();$("#1month1device").click(function(){$("#1month1deviceimg").show(); });
+        $('#1day2devicesimg').hide();$("#1day2devices").click(function(){$("#1day2devicesimg").show(); });
+        $('#1week2devicesimg').hide();$("#1week2devices").click(function(){$("#1week2devicesimg").show(); });
+        $('#1month2devicesimg').hide();$("#1month2devices").click(function(){$("#1month2devicesimg").show(); }); 
       });
       </script>
    </body>
