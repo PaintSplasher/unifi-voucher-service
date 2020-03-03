@@ -34,29 +34,29 @@ require_once ('uvs_config.php');
                <div class="col-lg-8 col-md-8 col-sm-8 gallery1st print1weekfree">
                   <div class="row">
                      <div class="col-xs-4">
-                        <label>Quota</label>
+                        <label>Bruikbaarheid</label>
                         <select class="form-control" name="quota" id="quota">
-                           <option value="1">One time (1 usage)</option>
-                           <option value="2">Multi use (2 usages)</option>
-                           <option value="0">Multi use (unlimited)</option>
+                           <option value="1">Eenmaal (1 apparaat)</option>
+                           <option value="2">Meermaal (2 apparaten)</option>
+                           <option value="0">Meermaal (ongelimiteerd)</option>
                         </select>
                      </div>
                      <div class="col-xs-4">
-                        <label>Expiration</label>
+                        <label>Geldigheid</label>
                         <select class="form-control" name="expiration" id="expiration">
-                           <option value="60">1 Hour</option>
-                           <option value="360">6 Hours</option>
-                           <option value="720">12 Hours</option>
-                           <option value="1440">24 Hours</option>
-                           <option value="2880">2 Days</option>
-                           <option value="10080">7 Days</option>
-                           <option value="44640">1 Month</option>
+                           <option value="60">1 uur</option>
+                           <option value="360">6 uur</option>
+                           <option value="720">12 uur</option>
+                           <option value="1440">24 uur</option>
+                           <option value="2880">2 dagen</option>
+                           <option value="10080">7 dagen</option>
+                           <option value="44640">1 maand</option>
                         </select>
                      </div>
                      <div class="col-xs-4">
-                        <label>Byte Quota</label>
+                        <label>Byte quota</label>
                         <select class="form-control" name="bytequota" id="bytequota">
-                           <option value="0">unlimited</option>
+                           <option value="0">ongelimiteerd</option>
                            <option value="500">500 MB</option>
                            <option value="1000">1000 MB</option>
                            <option value="1500">1500 MB</option>
@@ -69,35 +69,35 @@ require_once ('uvs_config.php');
                   <br/>
                   <div class="row">
                      <div class="col-xs-6">
-                        <label>Download Bandwidth</label>
+                        <label>Download bandbreete</label>
                         <select class="form-control" name="downloadlimit" id="downloadlimit">
-                           <option value="0">unlimited</option>
-                           <option value="900">900 Kbps</option>
-                           <option value="1800">1800 Kbps</option>
-                           <option value="3600">3600 Kbps</option>
-                           <option value="7200">7200 Kbps</option>
-                           <option value="14400">14400 Kbps</option>
-                           <option value="28800">28800 Kbps</option>
+                           <option value="0">ongelimiteerd</option>
+                           <option value="1000">1 Mbps</option>
+                           <option value="2000">2 Mbps</option>
+                           <option value="5000">5 Mbps</option>
+                           <option value="10000">10 Mbps</option>
+                           <option value="15000">15 Mbps</option>
+                           <option value="20000">20 Mbps</option>
                         </select>
                      </div>
                      <div class="col-xs-6">
-                        <label>Upload Bandwidth</label>
+                        <label>Upload bandbreete</label>
                         <select class="form-control" name="uploadlimit" id="uploadlimit">
-                           <option value="0">unlimited</option>
-                           <option value="450">450 Kbps</option>
-                           <option value="900">900 Kbps</option>
-                           <option value="1800">1800 Kbps</option>
-                           <option value="3600">3600 Kbps</option>
-                           <option value="7200">7200 Kbps</option>
-                           <option value="14400">14400 Kbps</option>
+                           <option value="0">ongelimiteerd</option>
+                           <option value="1000">1 Mbps</option>
+                           <option value="2000">2 Mbps</option>
+                           <option value="5000">5 Mbps</option>
+                           <option value="10000">10 Mbps</option>
+                           <option value="15000">15 Mbps</option>
+                           <option value="20000">20 Mbps</option>
                         </select>
                      </div>
                   </div>
                   <br/>
                   <div class="row">
                      <div class="col-xs-12">
-                     <label>Note</label>
-                        <input type="text" class="form-control" placeholder="Type a note" name="note" id="note">
+                     <label>Notitie</label>
+                        <input type="text" class="form-control" placeholder="Typ een notitie" name="note" id="note">
                      </div>
                   </div>
                </div>
