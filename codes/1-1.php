@@ -45,12 +45,12 @@ function create_printimage($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8) {
  }
 
 // Initialize the UniFi API connection class and log in to the controller
-$unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $controllerurl, $uvs_1dp_site_id, $controllerversion);
+$unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $controllerurl, $uvs_1d1u_site_id, $controllerversion);
 $set_debug_mode   = $unifi_connection->set_debug($debug);
 $loginresults     = $unifi_connection->login();
 
 // Then we create the voucher with the requested expiration value and settings
-$voucher_result = $unifi_connection->create_voucher($uvs_1dp_expiration, $uvs_1dp_count, $uvs_1dp_quota, $uvs_1dp_note, $uvs_1dp_up, $uvs_1dp_down, $uvs_1dp_limit);
+$voucher_result = $unifi_connection->create_voucher($uvs_1d1u_expiration, $uvs_1d1u_count, $uvs_1d1u_quota, $uvs_1d1u_note, $uvs_1d1u_up, $uvs_1d1u_down, $uvs_1d1u_limit);
 
 // We then fetch the newly created vouchers by the create_time returned
 $vouchers = $unifi_connection->stat_voucher($voucher_result[0]->create_time);
