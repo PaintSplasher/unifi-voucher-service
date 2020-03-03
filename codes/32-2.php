@@ -16,7 +16,7 @@ require_once ('/usr/src/UniFi-API-client/src/Client.php');
 require_once ('../config.php');
 
 // Change the button if the voucher is printed
-echo "<button type=\"submit\" name=\"1-week-free\" id=\"1-week-free\">";
+echo "<button type=\"submit\" name=\"1-day-fastpass\" id=\"1-day-fastpass\">";
 echo "<img src=\"assets/img/done_printing.png\" class=\"img-responsive\" />";
 echo "</button>";
 
@@ -45,12 +45,12 @@ function create_printimage($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8) {
  }
 
 // Initialize the UniFi API connection class and log in to the controller
-$unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $controllerurl, $uvs_7df_site_id, $controllerversion);
+$unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $controllerurl, $uvs_31d2u_site_id, $controllerversion);
 $set_debug_mode   = $unifi_connection->set_debug($debug);
 $loginresults     = $unifi_connection->login();
 
 // Then we create the voucher with the requested expiration value and settings
-$voucher_result = $unifi_connection->create_voucher($uvs_7df_expiration, $uvs_7df_count, $uvs_7df_quota, $uvs_7df_note, $uvs_7df_up, $uvs_7df_down, $uvs_7df_limit);
+$voucher_result = $unifi_connection->create_voucher($uvs_31d2u_expiration, $uvs_31d2u_count, $uvs_31d2u_quota, $uvs_31d2u_note, $uvs_31d2u_up, $uvs_31d2u_down, $uvs_31d2u_limit);
 
 // We then fetch the newly created vouchers by the create_time returned
 $vouchers = $unifi_connection->stat_voucher($voucher_result[0]->create_time);
@@ -68,7 +68,7 @@ $t1 = $vouchers[0]->code;
 $t1 = substr($t1,0,5) . "-" . substr($t1,5,5);
 $t2 = $uvs_upload . " " . $vouchers[0]->qos_rate_max_up . " " . $uvs_uprate;
 $t3 = $uvs_download . " " . $vouchers[0]->qos_rate_max_down . " " . $uvs_uprate;
-$t4 = $uvs_expiration ." " . (($vouchers[0]->duration) / 1440) . " " . $uvs_days;
+$t4 = $uvs_expiration ." " . (($vouchers[0]->duration) / 60) . " " . $uvs_hours;
 $t5 = $vouchers[0]->note;
 $t6 = $uvs_quota ." ". $vouchers[0]->quota . " " . $uvs_usages;
 $t7 = $uvs_wifissid . " " . $wlan_ssid;
