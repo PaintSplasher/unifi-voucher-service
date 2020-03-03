@@ -7,16 +7,16 @@
 */
 
 /* Voucher front page */
-$uvs_title          =   'Unifi Voucher Service'; // The title of your voucher page
+$uvs_title          =   'ittdesk voucher service'; // The title of your voucher page
 $uvs_subtitle       =   'Please choose a voucher to get access to our network!'; // Here you can write down your subtitle or some comment
 
 /* Translate if you want */
 $uvs_quota          =   ''; // Quota
-$uvs_usages         =   ''; // Usages
-$uvs_hours          =   'Hours';
-$uvs_day            =   'Day';
-$uvs_days           =   'Days';
-$uvs_expiration     =   ''; // Valid for
+$uvs_usages         =   'Gebruiker(s)'; // Usages
+$uvs_hours          =   'Uur';
+$uvs_day            =   'Dag';
+$uvs_days           =   'Dagen';
+$uvs_expiration     =   'Geldig voor'; // Valid for
 $uvs_upload         =   ''; // Upload Bandwidth
 $uvs_download       =   ''; // Download Bandwidth
 $uvs_uprate         =   'Kbps';
