@@ -41,7 +41,7 @@ require_once ('uvs_config.php');
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery1st print1month1device">
                <button onCLick="$.ajax({url: 'codes/31-1.php', type: 'GET', success: function(data){$('.print1month1device').html(data);}});" type="submit" name="1month1device" id="1month1device">
-               <div id="oben"><img src="assets/img/printing.png" id="1month1deviceimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/1-month-free.png" class="img-responsive" /></div>
+               <div id="oben"><img src="assets/img/printing.png" id="1month1deviceimg" width="208px" class="img-responsive" /></div><div id="unten"><img src="assets/img/31-1.png" class="img-responsive" /></div>
                </button>			
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery2nd print1day2devices">
