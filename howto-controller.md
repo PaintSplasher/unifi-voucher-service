@@ -25,7 +25,7 @@ sudo apt-get install unifi
 ```
 #### 6. Not nice, but we need java 8 for the controller
 ```
-sudo apt-get install oracle-java8-jdk
+sudo apt-get install install openjdk-8-jre-headless
 ```
 ```
 echo 'JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt' | sudo tee /etc/default/unifi > /dev/null
