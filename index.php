@@ -25,7 +25,6 @@ require_once ('uvs_config.php');
       <section id="works"></section>
       <div class="container">
          <div class="row centered mt mb">
-            <span class="shutdown_btn"><a href="shutdown.php"><img src="assets/img/shutdown.png" /></a></span>
             <p><a href="index_custom.php"><img src="assets/img/logo.png" /></a></p>
 						<h4><?php echo $uvs_subtitle ?></h4>
             <form id="buttons">
