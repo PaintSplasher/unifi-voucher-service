@@ -1,3 +1,6 @@
+## There is a new version on the road with new features and web interface. See you in June ;)
+(March 24th, 2021)
+
 # UniFi Voucher System v2 - Touchscreen with Brother printer
 I did a complete W-LAN installation on a campsite. But the Hotspot Manager that comes with the **UniFi Controller** was not very useful and a bit laborious to work with. I wanted a very simple all in one solution like, "Press one button and nothing else" to get a voucher printed and automatically insert the information to the UniFi Controller, that guests are able to join the network. I made a little video to introduce what this project does.
 
