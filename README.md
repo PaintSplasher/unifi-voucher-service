@@ -1,6 +1,6 @@
 ## There is a new version available!!!
 Voucher Service Pro for UniFi is a modern and extremely customizable ticket system including printing and network options. Based on the phenomenal and affordable Raspberry Pi. https://shop.sass-projects.info/
-(March 24th, 2021)
+(July 5th, 2021)
 
 # UniFi Voucher System v2 - Touchscreen with Brother printer
 I did a complete W-LAN installation on a campsite. But the Hotspot Manager that comes with the **UniFi Controller** was not very useful and a bit laborious to work with. I wanted a very simple all in one solution like, "Press one button and nothing else" to get a voucher printed and automatically insert the information to the UniFi Controller, that guests are able to join the network. I made a little video to introduce what this project does.
