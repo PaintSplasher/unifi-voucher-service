@@ -1,5 +1,8 @@
 ## There is a new version available!!!
-Voucher Service Pro for UniFi is a modern and extremely customizable ticket system including printing and network options. Based on the phenomenal and affordable Raspberry Pi. https://shop.sass-projects.info/
+Voucher Service Pro for UniFi is a modern and extremely customizable ticket system including printing and network options. Based on the phenomenal and affordable Raspberry Pi. Available at >>> https://shop.sass-projects.info <<<
+
+![Alt text](https://github.com/PaintSplasher/unifi-voucher-service/blob/master/uvs3_voucher_prev1_en.png "Voucher Service Pro for UniFi")
+
 (July 5th, 2021)
 
 # UniFi Voucher System v2 - Touchscreen with Brother printer
